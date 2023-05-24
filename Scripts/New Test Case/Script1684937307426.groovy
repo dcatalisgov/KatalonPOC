@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
 Windows.click(findWindowsObject('Object Repository/PrincipalWindow/Button'))
 
 Windows.click(findWindowsObject('Object Repository/PrincipalWindow/TitleBar'))
